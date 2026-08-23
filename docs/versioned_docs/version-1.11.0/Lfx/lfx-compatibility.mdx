@@ -118,4 +118,4 @@ It does **not** install graduated standalone packages such as `lfx-openai` or `l
 `uv pip install langflow` instead depends on `lfx-bundles[all-no-torch]` plus the individual `lfx-*` packages, so Langflow stays torch-free by default.
 For a slimmer image, install only the provider packages a deployment actually executes, for example `uv pip install lfx lfx-openai "lfx-bundles[qdrant]"`.
 There is intentionally no `lfx[all]` extra, because that is equivalent to `uv pip install langflow`.
-Some components require a [torch opt-in install](./components-bundle-components#torch-opt-in).
+Some components require a [torch opt-in install](/components-bundle-components#torch-opt-in).
